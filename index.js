@@ -9,24 +9,24 @@ const app = new App({
   socketMode: true
 });
 
-app.command("/my-plant-waterer-ping", async ({ command, ack, respond }) => {
+app.command("/my-bot", async ({ command, ack, respond }) => {
   const start = Date.now();
   await ack();
   const latency = Date.now() - start;
   await respond({ text: `Pong!\nLatency: ${latency}ms` });
 });
 
-app.command("/my-plant-waterer-help", async ({ ack, respond }) => {
+app.command("/my-bot-help", async ({ ack, respond }) => {
   await ack();
   await respond({
     text:
 `Available Commands:
-/my-plant-waterer-ping - Check bot latency
-/my-plant-waterer-catfact - Get a cat fact`
+/my-bot-ping - Check bot latency
+/my-bot-catfact - Get a cat fact`
   });
 });
 
-app.command("/my-plant-waterer-catfact", async ({ ack, respond }) => {
+app.command("/my-bot-catfact", async ({ ack, respond }) => {
   await ack();
 
   try {
@@ -37,7 +37,7 @@ app.command("/my-plant-waterer-catfact", async ({ ack, respond }) => {
   }
 });
 
-app.command("/my-plant-waterer-joke", async ({ ack, respond }) => {
+app.command("/my-bot-joke", async ({ ack, respond }) => {
   await ack();
 
   try {
