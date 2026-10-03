@@ -1,0 +1,24 @@
+{
+  "name": "solar-powered-plant-waterer",
+  "version": "1.0.0",
+  "description": "Slack Bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElioXY/Solar-powered-plant-waterer.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ElioXY/Solar-powered-plant-waterer/issues"
+  },
+  "homepage": "https://github.com/ElioXY/Solar-powered-plant-waterer#readme",
+  "dependencies": {
+    "@slack/bolt": "^5.1.0",
+    "axios": "^1.20.0",
+    "dotenv": "^18.0.5"
+  }
+}
