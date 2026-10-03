@@ -9,7 +9,7 @@ const app = new App({
   socketMode: true
 });
 
-app.command("/my-bot", async ({ command, ack, respond }) => {
+app.command("/my-bot-ping", async ({ command, ack, respond }) => {
   const start = Date.now();
   await ack();
   const latency = Date.now() - start;
@@ -22,7 +22,8 @@ app.command("/my-bot-help", async ({ ack, respond }) => {
     text:
 `Available Commands:
 /my-bot-ping - Check bot latency
-/my-bot-catfact - Get a cat fact`
+/my-bot-catfact - Get a cat fact
+/my-bot-joke - Get a random joke`
   });
 });
 
