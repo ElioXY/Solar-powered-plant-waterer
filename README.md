@@ -1,2 +1,2 @@
-# Solar-powered-plant-waterer
-Slack Bot
+# My first bot
+My first stardance project
