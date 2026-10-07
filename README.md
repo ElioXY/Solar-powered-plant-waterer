@@ -3,7 +3,7 @@
 
 This is my first time creating a bot in Slack, i have never used Slack before :)
 
-With this bot you can use 3 commands:
+With this bot you can use 4 commands:
 
 1. /my-bot-ping
 2. /my-bot-help
